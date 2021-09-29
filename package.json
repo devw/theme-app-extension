@@ -1,0 +1,11 @@
+{
+    "name": "theme-app-extension",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Antonio Pierro <antonio.pierro@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "connect" : "shopify extension connect",
+      "push" : "shopify extension push"
+    }
+}
