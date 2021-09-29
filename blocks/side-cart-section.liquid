@@ -1,10 +1,26 @@
-<div style="position: fixed; top: 0px; z-index: 99; right: 0px">
+<div style="position: fixed; top: 0px; z-index: 999; {{block.settings.position}} ">
   {{ "side-cart.png" | asset_img_url: '1000x' | img_tag }}
 </div>
 
 {% schema %}
 {
   "name": "Side Cart Section",
-  "target": "section"
+  "target": "section",
+  "settings": [{
+    "type":"select",
+    "id":"position",
+    "label":"position:",
+    "options":[
+      {
+      "value":"right: 0px",
+      "label":"align right"
+      },
+      {
+      "value":"left: 0px",
+      "label":"align left"
+      }
+    ],
+    "default":"right: 0px"
+  }]
 }
 {% endschema %}
